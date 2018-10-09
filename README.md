@@ -38,7 +38,7 @@
 |scope|string|表示权限范围|
 
 ## 频道流接口
-合作方根据提供的JS获取用户id，调用频道流接口可以获取相应频道内容列表。
+合作方根据下方提供的JSSDK获取用户id，调用频道流接口可以获取相应频道内容列表。
 
 ### 接口样例
 >http://api.dj.gl/api/v1/news_feed/index.json?userId=123&page=1&pageSize=6&access_token=${access_token}
@@ -68,7 +68,7 @@
 
 ### 正文的获取方式
 1. 通过频道流接口中的正文url来直接进入正文页
-2. 如果合作方希望自己定制正文页，可以使用我们提供的JS，获取正文页数据
+2. 如果合作方希望自己定制正文页，可以使用我们下方提供的JSSDK，获取正文页数据
 
 ## jssdk使用文档
 目前仅提供两个接口`getgluid`和`getArticle`
