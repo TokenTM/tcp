@@ -84,9 +84,15 @@
 
 ### getArticle(newsId, userId, access_token)(resolve, reject)
 根据newsId获取文章详情
+例: 
+```
+window.getArticle('ncced993270a84690b7cc7fa4eb23ed27', 'I5hAUrkL8ObpTqX/+hKUwg==', '4bc24b4d-a039-4e0d-8983-3fbe35f8b772')(console.log, console.error)
+```
 
 |字段|类型|说明|
 |----|----|----|
 |newsId|string|新闻id|
 |userId|string|h5id请用`getgluid`获取并缓存|
 |access_token|string|accessToken|
+|resolve|function|成功回调|
+|reject|function|失败回调|
