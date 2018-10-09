@@ -96,3 +96,21 @@ window.getArticle('ncced993270a84690b7cc7fa4eb23ed27', 'I5hAUrkL8ObpTqX/+hKUwg==
 |access_token|string|accessToken|
 |resolve|function|成功回调|
 |reject|function|失败回调|
+
+### 正文字段说明
+|字段|类型|说明|
+|----|----|----|
+|newsId|string|新闻id|
+|templateType|int|模板类型，图文新闻是1|
+|title|string|新闻标题|
+|shareTitle|string|新闻标题|
+|zhTitle|string|中文标题|
+|summary|string|新闻摘要|
+|articleUrl|string|正文页url|
+|publishTime|long|发布时间|
+|shareImage|string|分享图|
+|media|string|媒体|
+|content|string|正文，包含字段：[type(text, image, translation), info, imageInfo, tag]|
+
+
+
