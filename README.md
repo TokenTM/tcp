@@ -56,4 +56,23 @@ TokenTM共识链盟
 1. 通过频道流接口中的正文url来直接进入正文页
 2. 如果合作方希望自己定制正文页，可以使用我们提供的JS，获取正文页数据
 
+## jssdk使用文档
+目前仅提供两个接口`getgluid`和`getArticle`
+使用时请引入
 
+```
+<script type="text/javascript" scr="https://h5uid.net/static/tcp/js/tokentm-sdk.js"></script>
+```
+
+### getgluid
+用于获取用户id,
+例如: window.userId = window.getgluid()
+
+### getArticle(newsId, userId, access_token)(resolve, reject)
+根据newsId获取文章详情
+
+|字段|类型|说明|
+|----|----|----|
+|newsId|string|新闻id|
+|userId|string|h5id请用`getgluid`获取并缓存|
+|access_token|string|accessToken|
