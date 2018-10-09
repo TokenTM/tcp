@@ -12,7 +12,9 @@
 1.发邮件至 henryzheng@staff.token.tm ,1个工作日回复client_id和client_secret.发送邮件内容如下:
 
 项目名称：您的项目名称
+
 官网地址: 您的项目官网
+
 联系方式： 您的手机号/微信
 
 2.通过client_id和client_secret调用认证接口获取acess_token。
