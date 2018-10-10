@@ -21,7 +21,7 @@
 
 
 ### 接口样例
-> http://api.dj.gl/api/v1/oauth/token?grant_type=client_credentials&scope=select&client_id=${id}&client_secret=${secret}
+> http://api.tokentm.net/api/v1/oauth/token?grant_type=client_credentials&scope=select&client_id=${id}&client_secret=${secret}
 
 **access_token规范服务oauth2规范，请参考标准规范。**
 
@@ -39,11 +39,31 @@
 |expires_in|long|表示过期时间，单位为秒。|
 |scope|string|表示权限范围|
 
+## 频道列表获取
+获取频道列表，根据获取的频道信息，调用频道流接口获取对应的新闻。
+
+### 接口样例
+http://api.tokentm.net/api/v1/coin/list?access_token=${access_token}
+
+### 请求参数
+|字段|类型|说明|
+|----|----|----|
+|access_token|string|访问令牌|
+
+### 响应参数
+|字段|类型|说明|
+|----|----|----|
+|channelName|string|频道名|
+|coinName|string|币种名称|
+|coinNameCn|string|中文币种名称|
+|coinNameEn|string|英文币种名称|
+|symbol|string|标识符|
+
 ## 频道流接口
 合作方根据下方提供的JSSDK获取用户id，调用频道流接口可以获取相应频道内容列表。
 
 ### 接口样例
->http://api.dj.gl/api/v1/news_feed/index.json?userId=123&page=1&pageSize=6&access_token=${access_token}
+>http://api.tokentm.net/api/v1/news_feed/${channelName}.json?userId=123&page=1&pageSize=6&access_token=${access_token}
 
 ### 请求参数
 |字段|类型|说明|
