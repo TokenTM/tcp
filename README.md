@@ -63,7 +63,7 @@ http://api.tokentm.net/api/v1/coin/list?access_token=${access_token}
 合作方根据下方提供的JSSDK获取用户id，调用频道流接口可以获取相应频道内容列表。
 
 ### 接口样例
->http://api.tokentm.net/api/v1/news_feed/${channelName}.json?userId=123&page=1&pageSize=6&access_token=${access_token}
+>http://api.tokentm.net/api/v1/news_feed/index.json?userId=123&page=1&pageSize=6&access_token=${access_token}
 
 ### 请求参数
 |字段|类型|说明|
@@ -87,6 +87,36 @@ http://api.tokentm.net/api/v1/coin/list?access_token=${access_token}
 |zhTitle|string|中文标题|
 |translation|string|中文翻译|
 |userInfo|string|用户信息，包括avatarUrl(头像), nickName(昵称)等属性|
+
+## 频道流接口（英文版）
+合作方根据下方提供的JSSDK获取用户id，调用频道流接口可以获取相应频道内容列表。
+
+### 接口样例
+>http://api.tokentm.net/api/v1/news_feed/en/index.json?userId=123&page=1&pageSize=6&access_token=${access_token}
+
+### 请求参数
+|字段|类型|说明|
+|----|----|----|
+|userId|string|用户id|
+|page|int|页码|
+|pageSize|int|条数|
+|access_token|string|访问令牌|
+
+### 响应参数
+|字段|类型|说明|
+|----|----|----|
+|newsId|string|新闻id|
+|templateType|int|模板类型，图文新闻是1|
+|title|string|新闻标题|
+|summary|string|新闻摘要|
+|articleUrl|string|正文页url|
+|publishTime|long|发布时间|
+|shareImage|string|分享图|
+|media|string|媒体|
+|zhTitle|string|中文标题|
+|translation|string|中文翻译|
+|userInfo|string|用户信息，包括avatarUrl(头像), nickName(昵称)等属性|
+
 
 ### 正文的获取方式
 1. 通过频道流接口中的正文url来直接进入正文页
