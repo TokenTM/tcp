@@ -118,7 +118,7 @@ http://api.tokentm.net/api/v1/coin/list?access_token=${access_token}
 |userInfo|string|用户信息，包括avatarUrl(头像), nickName(昵称)等属性|
 
 
-### 正文的获取方式
+## 正文的获取方式
 1. 通过频道流接口中的正文url来直接进入正文页
 2. 如果合作方希望自己定制正文页，可以使用我们下方提供的JSSDK，获取正文页数据
 
