@@ -127,7 +127,7 @@ http://api.tokentm.net/api/v1/coin/list?access_token=${access_token}
 使用时请引入
 
 ```
-<script type="text/javascript" scr="https://h5uid.net/static/tcp/js/tokentm-sdk.js"></script>
+<script type="text/javascript" src="https://h5uid.net/static/tcp/js/tokentm-sdk.js"></script>
 ```
 
 ### getgluid
