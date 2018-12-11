@@ -98,12 +98,13 @@ http://api.tokentm.net/api/v1/coin/list?access_token=${access_token}
 ## 频道流接口（英文版）
 合作方根据下方提供的JSSDK获取用户id，调用频道流接口可以获取相应频道内容列表。
 
-### 接口样例
->http://api.tokentm.net/api/v1/news_feed/en/index.json?userId=123&page=1&pageSize=6&access_token=${access_token}
+### 接口定义
+>http://api.tokentm.net/api/v1/news_feed/en/${channelName}.json?userId=${userId}&page=${page}&pageSize=${pageSize}&access_token=${access_token}
 
 ### 请求参数
 |字段|类型|说明|
 |----|----|----|
+|channelName|string|频道名，通过频道列表接口获取|
 |userId|string|用户id|
 |page|int|页码|
 |pageSize|int|条数|
@@ -124,6 +125,11 @@ http://api.tokentm.net/api/v1/coin/list?access_token=${access_token}
 |translation|string|中文翻译|
 |userInfo|string|用户信息，包括avatarUrl(头像), nickName(昵称)等属性|
 
+## 首页流接口（英文版）
+合作方根据下方提供的JSSDK获取用户id，调用频道流接口可以获取相应频道内容列表。
+
+### 接口定义
+>http://api.tokentm.net/api/v1/news_feed/en/index.json?userId=${userId}&page=${page}&pageSize=${pageSize}&access_token=${access_token}
 
 ## 正文的获取方式
 1. 通过频道流接口中的正文url来直接进入正文页
